@@ -28,6 +28,7 @@ class _WebViewStackState extends State<WebViewStack> {
     return Stack(
       children: [
         WebView(
+          javascriptMode: JavascriptMode.unrestricted,
           initialUrl: 'https://tour.lambeugak.id/',
           onWebViewCreated: (webViewController) {
             widget.controller.complete(webViewController);
